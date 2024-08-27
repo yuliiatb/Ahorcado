@@ -1,0 +1,122 @@
+:root {
+    --azul-oscuro: rgb(5, 59, 79);
+    --coral-oscuro: rgb(227, 145, 115);
+    --fondo: rgb(250, 182, 160);
+}
+
+* {
+    background-color: var(--fondo);
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+}
+
+h1 {
+    font-family: fantasy;
+    text-align: center;
+    color: var(--azul-oscuro);
+    margin-bottom: 20px;
+}
+
+#texto {
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+.guia {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+#guia{
+    background-color: var(--azul-oscuro);
+    color: var(--fondo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20%;
+    border-width: 3px;
+    border-style: solid;
+}
+
+#campo {
+    border-width: 3px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    border-color:var(--azul-oscuro);
+    white-space: nowrap;
+    resize: none;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center;
+    width: 300px;
+    height: 60px;
+    padding-top: 13px;
+    margin: 20px;
+    color:var(--azul-oscuro);
+    background-color: var(--coral-oscuro);
+    box-shadow: 4px 4px 8px;
+    margin: 20px auto; /*para que no se vaya a la derecha o izquierda*/
+}
+
+.fila {
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+    margin-bottom: 10px; 
+}
+
+.letras {
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.letras button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 40%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: var(--azul-oscuro);
+    box-shadow: 4px 4px 8px var(--azul-oscuro);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background-color: var(--coral-oscuro);
+}
+
+.letras button:hover {
+    background-color: coral;
+}
+
+footer { 
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
